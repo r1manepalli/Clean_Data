@@ -51,3 +51,4 @@ Mergeddata <- rbind.fill(mytestdata,mytraindata)
 ##Writing Data
  clean_data1 <- dcast(melt_data, subject + Activity_Label ~ variable, mean) 
  write.table(clean_data1, file = "./clean_data1.txt",row.names=FALSE) 
+
